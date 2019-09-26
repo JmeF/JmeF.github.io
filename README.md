@@ -1,2 +1,2 @@
 # JmeF.github.io
-Personal website (test)
+Personal website
