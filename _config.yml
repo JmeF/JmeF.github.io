@@ -5,8 +5,8 @@ collections:
   projects:
     output: true
     permalink: /project/:name
-    #collections_dir: content
   publications:
     output: False
   talks:
     output: False
+collections_dir: content
