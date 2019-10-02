@@ -2,9 +2,9 @@ name: Jamie Fawcett
 markdown: kramdown
 
 collections:
+#   -publications
+#   -talks
   projects:
     output: true
-    permalink: /:collection/:path/
-    title: Projects
-
-
+    permalink: /project/:name
+    #collections_dir: content
