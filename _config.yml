@@ -1,3 +1,10 @@
 name: Jamie Fawcett
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+    title: Projects
+
+
