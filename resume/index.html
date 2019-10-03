@@ -3,9 +3,37 @@ layout: default
 title: Resume
 ---
 	<h1>{{ page.title }}</h1>
-	<ul class="resume">
-		{% for section in site.resume %}
-			<h2>{{ section.title }}</h2>
-			<p>{{ section.content }}</p>
+	<div class="resume-section">
+		<h2>Summary</h2>
+			<div class="bullets">
+				<li>Over 4 years delivering complex analytical research and consultancy projects.</li>
+				<li>Proven capacity to lead teams, manage projects and deliver impact-oriented outcomes.</li>
+				<li>Demonstrated ability to communicate technical concepts and policy recommendations.</li>
+				<li>Strong analytical skills including in a variety of research, - -statistical and data science methods.</li>
+				<li>Proficient in Python, R, SQL, Excel / Google Sheets, NetLogo, QGIS, OpenRefine.</li>
+			</div>
+	</div>
+
+	<div class="resume-section">
+		<h2>Employment</h2>
+		<div class="resume-employment">
+			{% assign em-sorted = site.resume-employment | sort: 'date-start' | reverse %}
+			{% for item in em-sorted %}
+			<h3>{{ item.job-title }} - {{ item.company }} - {{item.grade}} (<em>{{ item.location }}</em>)</h3>
+			<p><em>{{ item.date-start}} -  {{ item.date-end}}</em></p>
+			<p>{{ item.content }}</p>
 		{% endfor %}
-	</ul>
+		</div>
+	</div>
+
+	<div class="resume-section">
+		<h2>Education</h2>
+		<div class="resume-education">
+			{% assign ed-sorted = site.resume-education | sort: 'date-start' | reverse %}
+			{% for item in ed-sorted %}
+			<h3>{{ item.degree-title }} - {{ item.university }} - {{item.grade}} (<em>{{ item.location }}</em>)</h3>
+			<p><em>{{ item.date-start}} -  {{ item.date-end}}</em></p>
+			<p>{{ item.content }}</p>
+		{% endfor %}
+		</div>
+	</div>
