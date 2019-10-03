@@ -4,9 +4,12 @@ title: Publications
 ---
 
 	<h1>{{ page.title }}</h1>
-	<p>TEST</p>
+	<p>Here's a bibliography containing most of the published papers I have
+		 written or contributed to. See <a href="https://scholar.google.com/citations?user=nDXweXQAAAAJ&hl=en">Google Scholar</a>
+	 for more details</p>
 	<ul class="publications">
 	  {% for publication in site.publications %}
-	    <li>{{ publication.title }} - {{ publication.content }}</li>
+	    <h2>{{ publication.title }}</h2>
+			{{ publication.content }}
 	  {% endfor %}
 	</ul>

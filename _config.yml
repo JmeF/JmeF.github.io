@@ -9,4 +9,6 @@ collections:
     output: False
   talks:
     output: False
+  resume:
+    output: False
 collections_dir: content
