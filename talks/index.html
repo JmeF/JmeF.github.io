@@ -8,10 +8,9 @@ title: Talks
 <ul class="talks">
 	{% for talk in site.talks %}
 		<li>
-			<p><strong>{{ talk.title }}</strong> - {{ talk.date | date_to_string }}</p>
+			<p><strong><a href={{ talk.link }} target="_blank">{{ talk.title }}</a></strong> - {{ talk.date | date_to_string }}</p>
 			<p><em>{{ talk.location }}</em></p>
-			<p>{{ talk.content }} <a href={{ talk.link }} target="_blank">Watch video here</a>.</p>
-
+			<p>{{ talk.content }}</p>
 		</li>
 	{% endfor %}
 </ul>

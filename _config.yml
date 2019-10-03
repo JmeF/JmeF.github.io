@@ -9,4 +9,8 @@ collections:
     output: False
   talks:
     output: False
+  resume-employment:
+    output: False
+  resume-education:
+    output: False
 collections_dir: content
