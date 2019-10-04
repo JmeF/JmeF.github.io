@@ -1,7 +1,6 @@
 name: Jamie Fawcett
 markdown: kramdown
 
-theme: minima
 collections:
   projects:
     output: true
