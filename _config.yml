@@ -1,6 +1,7 @@
 name: Jamie Fawcett
 markdown: kramdown
 
+#Setup collections so that md can be pushed into pages
 collections:
   projects:
     output: true
@@ -14,3 +15,8 @@ collections:
   resume-education:
     output: False
 collections_dir: content
+
+#Setup the sass print style + set location (actually default)
+sass:
+    sass_dir : _sass
+    style: compressed
