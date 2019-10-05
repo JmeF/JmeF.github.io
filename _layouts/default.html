@@ -1,10 +1,12 @@
 <!DOCTYPE html>
       <html>
         <head>
+          <meta charset="utf-8">
           <title>{{ page.title }}</title>
-          <!-- link to main stylesheet -->
-          <link rel="stylesheet" type="text/css" href="/css/main.css">
+          <!-- previous link to main stylesheet  <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
+          <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}" />
         </head>
+
 
         <body>
            <nav>
@@ -25,6 +27,7 @@
           </div><!-- /.container -->
 
           <footer>
+            <p>Contact me:</p>
               <ul>
           <li><a href="mailto:me@jamiefawcett.org.uk?subject=I found your website and...">Email</a></li>
 				  <li><a href="https://twitter.com/JamieFawcett1">Twitter</a></li>
