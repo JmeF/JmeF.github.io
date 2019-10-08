@@ -4,17 +4,21 @@
 footer {
     font-size: .8em;
     margin-top:auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 footer{
   .contact-bar{
-    background: $contact-bg-color
+    background: $contact-bg-color;
   }
   .licence-bar{
     background: $licence-bg-color
+    text-align:center;
   }
   .ref-bar{
     background: $ref-bg-color
+    text-align:right;
   }
   ul{
     padding: 0px;
