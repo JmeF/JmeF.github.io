@@ -1,0 +1,28 @@
+/* Footer layout
+------------------------------------------------------------------- */
+
+footer {
+    font-size: .8em;
+    margin-top:auto;
+}
+
+footer{
+  .contact-bar{
+    background: $contact-bg-color
+  }
+  .licence-bar{
+    background: $licence-bg-color
+  }
+  .ref-bar{
+    background: $ref-bg-color
+  }
+  ul{
+    padding: 0px;
+    list-style: none;
+    font-weight: $font-weight-bold;
+  }
+  li{
+    display: inline;
+    margin-right: 20px;
+  }
+}

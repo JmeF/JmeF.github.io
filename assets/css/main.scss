@@ -2,4 +2,7 @@
 # Insert front matter so Jekyll reads it
 ---
 
-@import "typography-color-settings";
+@import "typography-settings";
+@import "color-settings";
+@import "nav-layout";
+@import "footer_layout.scss";

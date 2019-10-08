@@ -1,0 +1,41 @@
+/*
+Setting up the typography and colours (for now)
+- Has no front matter so needs to be imported into main.sass
+*/
+
+/* Coolors Exported Palette - coolors.co/2b2d42-d0e1ea-2f4858-454955-8d99ae */
+
+/* HSL */
+$color1: hsla(235%, 21%, 21%, 1); /* orange? */
+$color2: hsla(201%, 38%, 87%, 1);/* very light blue */
+$color3: hsla(203%, 30%, 26%, 1); /* dark slate grey */
+$color4: hsla(225%, 10%, 30%, 1); /* dark grey */
+$color5: hsla(218%, 17%, 62%, 1); /* light grey-blue */
+$color-black: hsla(240%, 33%, 5%, 1); /* black */
+$color-white: hsla(220%, 100%, 99%, 1);/* white */
+
+/* RGB */
+$color1: rgba(43, 45, 66, 1);
+$color2: rgba(208, 225, 234, 1);
+$color3: rgba(47, 72, 88, 1);
+$color4: rgba(69, 73, 85, 1);
+$color5: rgba(141, 153, 174, 1);
+$color-black: rgba(8, 8, 16, 1);
+$color-white: rgba(249, 251, 255, 1);
+
+
+/* Colours
+------------------------------------------------------------------- */
+$text-colour: $color-black;
+$link-colour: $color5;
+
+$nav-bg-colour: $color3;
+$contact-bg-color: $color5;
+$licence-bg-color: $color4;
+$ref-bg-color: $color-black;
+
+
+
+
+
+$line-colour: $color3;
