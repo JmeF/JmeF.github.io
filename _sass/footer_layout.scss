@@ -11,14 +11,20 @@ footer {
 footer{
   .contact-bar{
     background: $contact-bg-color;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
   .licence-bar{
-    background: $licence-bg-color
-    text-align:center;
+    background: $licence-bg-color;
+    text-align: center;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
   }
   .ref-bar{
-    background: $ref-bg-color
+    background: $ref-bg-color;
     text-align:right;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
   }
   ul{
     padding: 0px;
