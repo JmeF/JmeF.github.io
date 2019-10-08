@@ -7,18 +7,10 @@
           <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}" />
         </head>
 
-
         <body>
-           <nav>
-              <ul>
-          <li><a href="/">Home</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/resume">Resume</a></li>
-					<li><a href="/publications">Publications</a></li>
-					<li><a href="/talks">Talks</a></li>
-					<li><a href="/projects">Projects</a></li>
-              </ul>
-          </nav>
+           <header>
+               {% include navigation.html %}
+           </header>
 
           <div class="container">
 
@@ -27,14 +19,15 @@
           </div><!-- /.container -->
 
           <footer>
-            <p>Contact me:</p>
-              <ul>
-          <li><a href="mailto:me@jamiefawcett.org.uk?subject=I found your website and...">Email</a></li>
-				  <li><a href="https://twitter.com/JamieFawcett1">Twitter</a></li>
-				  <li><a href="https://www.linkedin.com/in/jamie-fawcett-737314a3/">LinkedIn</a></li>
-				  <li><a href="https://github.com/JmeF">Github</a></li>
-				  <li><a href="https://scholar.google.com/citations?user=nDXweXQAAAAJ&hl=en">Google Scholar</a></li>
-            </ul>
+            <div class="contact-bar">
+              {% include contact.html %}
+            </div>
+            <div class="licence-bar">
+              {% include licence.html %}
+            </div>
+            <div class="ref-bar">
+              {% include reference.html %}
+            </div>
           </footer>
         </body>
       </html>
