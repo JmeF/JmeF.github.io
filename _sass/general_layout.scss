@@ -34,9 +34,12 @@ body {
 }
 .container {
   div{
-    margin: 40px auto;
-    width: 70%;
+    margin: 20px auto;
+    width: 80%;
     line-height: 1.4em;
+  }
+  img{
+    margin:0;
   }
 
 }
@@ -49,31 +52,31 @@ body {
 
   .subtitle{
     margin-top: 1.5em;
-    margin-bottom: 0.5em;
   }
+
   }
 
 .find-more{
-  margin-top: 0;
-  margin-bottom: 0;
   padding: 0;
-  display: flex;
+  margin:0;
+  display:block;
 
-  background: $color2;
 
   ul{
-    padding: 0;
     list-style: none;
-
+    padding: 0;
+    display:inline-block;
   }
 
   li{
     background: $licence-bg-color;
-    border-radius: 15%;
+    border-radius: 5%;
     padding-top: 0.6em;
     padding-bottom: 0.6em;
-    width:100px;
     display: inline-block;
+    width:100px;
+    margin: 0 1em;
+
 
     span{
       vertical-align: middle;
@@ -88,11 +91,26 @@ body {
   }
 }
 
-
-
-
-
 .work {
-  display: block;
   text-align: center;
+  h2{
+    border-style:solid;
+    border-width: 3px 0 0 0;
+    border-color: $color4;
+    padding: 1.5em 0;
+    width:70%;
+    margin-left: 15%;
+  }
+
+  .columns{
+    margin-top: 0px;
+    div{
+      margin-top: 0px;
+      border-style:solid;
+      border-width: 1px;
+      float: left;
+      width:30%;
+      margin-right: 2.9%;
+    }
+  }
 }
