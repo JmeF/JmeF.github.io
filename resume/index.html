@@ -2,7 +2,13 @@
 layout: default
 title: Resume
 ---
+<div class="blurb">
 	<h1>{{ page.title }}</h1>
+	<p>I am currently living in Vancouver (BC) on a temporary work permit.</p>
+</div>
+
+
+
 	<div class="resume-section">
 		<h2>Summary</h2>
 			<div class="bullets">
@@ -16,24 +22,35 @@ title: Resume
 
 	<div class="resume-section">
 		<h2>Employment</h2>
-		<div class="resume-employment">
 			{% assign em-sorted = site.resume-employment | sort: 'date-start' | reverse %}
 			{% for item in em-sorted %}
-			<h3>{{ item.job-title }} - {{ item.company }} - {{item.grade}} (<em>{{ item.location }}</em>)</h3>
-			<p><em>{{ item.date-start}} -  {{ item.date-end}}</em></p>
-			<p>{{ item.content }}</p>
+			<div class="record-head">
+				<div class="left">
+					<h3>{{ item.job-title }}</h3>
+					<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
+				</div>
+				<div class="right">
+					<h3>{{ item.company }} (<em>{{ item.location }}</em>)</h3>
+				</div>
+			</div>
+				{{ item.content }}
 		{% endfor %}
-		</div>
 	</div>
 
 	<div class="resume-section">
 		<h2>Education</h2>
-		<div class="resume-education">
 			{% assign ed-sorted = site.resume-education | sort: 'date-start' | reverse %}
 			{% for item in ed-sorted %}
-			<h3>{{ item.degree-title }} - {{ item.university }} - {{item.grade}} (<em>{{ item.location }}</em>)</h3>
-			<p><em>{{ item.date-start}} -  {{ item.date-end}}</em></p>
-			<p>{{ item.content }}</p>
+			<div class="record-head">
+				<div class="left">
+					<h3>{{ item.degree-title }}</h3>
+					<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
+				</div>
+				<div class="right">
+					<h3>{{ item.university }} (<em>{{ item.location }}</em>)</h3>
+					<h3>{{item.grade}}</h3>
+				</div>
+			</div>
+			{{ item.content }}
 		{% endfor %}
-		</div>
 	</div>
