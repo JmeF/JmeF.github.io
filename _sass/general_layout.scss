@@ -44,6 +44,13 @@ body {
 
 }
 
+.blurb{
+  p{
+    font-style: italic;
+  }
+}
+
+
 /* Homepage layout
 ------------------------------------------------------------------- */
 
@@ -113,4 +120,19 @@ body {
       margin-right: 2.9%;
     }
   }
+}
+
+
+/* Bio layout
+------------------------------------------------------------------- */
+
+img.profile{
+  width: 50%;
+  border-radius: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  float:right;
+  object-fit: contain;
+  overflow: hidden;
+  margin: 5%;
 }
