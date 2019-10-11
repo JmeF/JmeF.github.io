@@ -1,0 +1,55 @@
+/* Footer layout
+------------------------------------------------------------------- */
+
+footer {
+    font-size: .8em;
+    margin-top:auto;
+    color: $color-white;
+
+    a{
+      color: $link-colour;
+      text-decoration: underline;
+    }
+
+  .contact-bar{
+    background: $contact-bg-color;
+    text-align: center;
+    display:block;
+
+    ul{
+      padding: 0;
+      list-style: none;
+      font-weight: $font-weight-bold;
+      display: inline-block;
+    }
+    li{
+      display: inline;
+      margin-right: 2em;
+      color: $color-white;
+    }
+  }
+
+  .licence-bar{
+    background: $licence-bg-color;
+    text-align: left;
+    padding:0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    div{
+    margin: 0 1em;
+    }
+  }
+  .ref-bar{
+    background: $ref-bg-color;
+    text-align:center;
+    padding: 0.3em;
+
+    p{
+    margin: 0 1em;
+    }
+
+  }
+}
