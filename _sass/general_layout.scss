@@ -47,6 +47,7 @@ body {
 .blurb{
   p{
     font-style: italic;
+    font-size: $font-size-p;
   }
 }
 
@@ -186,3 +187,25 @@ img.profile{
       margin-right: auto;
     }
   }
+
+  /* Project layout
+  ------------------------------------------------------------------- */
+.project-image{
+  figure{
+    max-width: 750px;
+    min-width: 350px;
+    width:50%;
+    float: right;
+  }
+  figcaption{
+    font-style: italic;
+    font-size: $font-size-p;
+  }
+}
+
+.find-more-projects{
+  clear:both;
+  div{
+    width:100%;
+  }
+}

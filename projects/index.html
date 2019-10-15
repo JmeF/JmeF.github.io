@@ -9,7 +9,7 @@ title: Projects
 <div>
 	<ul class="projects">
 		{% for project in site.projects %}
-			<li><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></li>
+			<li><a href="{{ project.url }}" title="{{ project.descriptive-title }}"> {{project.type}}: {{ project.descriptive-title }}</a></li>
 		{% endfor %}
 	</ul>
 </div>
