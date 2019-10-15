@@ -2,17 +2,18 @@
 layout: default
 title: Talks
 ---
-
 <div class="blurb">
-	<h1>{{ page.title }}</h1>
-	<p>A number of talks that I have given that have been filmed.</p>
+		<h1>{{ page.title }}</h1>
+		<p>A number of talks that I have given that have been filmed.</p>
 </div>
-<ul class="talks">
-	{% for talk in site.talks %}
-		<li class="talk">
-			<p><strong><a href={{ talk.link }} target="_blank">{{ talk.title }}</a></strong></p>
-			<p><i>{{ talk.location }} - {{ talk.date | date_to_string }}</i></p>
-			<p>{{ talk.content }}</p>
-		</li>
-	{% endfor %}
-</ul>
+<div>
+	<ul class="talks">
+		{% for talk in site.talks %}
+			<li class="talk">
+				<p><strong><a href={{ talk.link }} target="_blank">{{ talk.title }}</a></strong></p>
+				<p><i>{{ talk.location }} - {{ talk.date | date_to_string }}</i></p>
+				<p>{{ talk.content }}</p>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

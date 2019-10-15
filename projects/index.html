@@ -2,9 +2,14 @@
 layout: default
 title: Projects
 ---
+<div class="blurb">
 	<h1>{{ page.title }}</h1>
+	<p> This is a collection of projects I have done.</p>
+</div>
+<div>
 	<ul class="projects">
-	  {% for project in site.projects %}
-	    <li><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></li>
-	  {% endfor %}
+		{% for project in site.projects %}
+			<li><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></li>
+		{% endfor %}
 	</ul>
+</div>
