@@ -112,14 +112,14 @@ body {
 
   .columns{
     margin-top: 0px;
+    display: flex;
+
     div{
       margin-top: 0px;
       border-style:solid;
       border-width: 1px;
-      float: left;
-      width:30%;
-      margin-left: 2%;
-      margin-right: auto;
+      flex: 1;
+      margin:5px;
     }
   }
 }
@@ -207,5 +207,18 @@ img.profile{
   clear:both;
   div{
     width:100%;
+  }
+  .find-more-columns{
+    margin-top: 0px;
+    display: flex;
+
+    div{
+      flex: 1;
+      margin-top: 0px;
+      border-style:solid;
+      border-width: 1px;
+      padding: 1em;
+      margin:5px;
+    }
   }
 }
