@@ -1,3 +1,49 @@
 ---
 layout: default
 ---
+<div class="blurb">
+  <h1>{{page.descriptive-title}}</h1>
+  <p>{{page.description}}</p>
+</div>
+
+<div class="project-image">
+  <figure>
+      <img src="{{ site.url }}/assets/images/{{ page.main-image }}" alt="main-fig" class="main-fig">
+      <figcaption>{{page.image-description}}</figcaption>
+  </figure>
+</div>
+
+
+<div class="content">
+  {{ content }}
+</div>
+
+<div class="find-more-projects">
+  <h2>Find out more:</h2>
+  <div class="find-more-columns">
+    {% if page.report == 'True' %}
+    <div class="report-download">
+      <h3>Project writeup</h3>
+      <p>A full write-up for this project is available via <a href="{{page.gdocs-link}}edit?usp=sharing">google docs</a>
+        or to <a href="{{page.gdocs-link}}export?format=pdf">download as pdf</a>.</p>
+    </div>
+    {% endif %}
+    {% if page.code == 'True' %}
+    <div class="code">
+      <h3>Project code</h3>
+      <p>The code used for this project can be found in this <a href= {{page.github-link}}>Github repo</a>.</p>
+    </div>
+    {% endif %}
+    <div class="more-info">
+      <h3>Contact me</h3>
+      <p>If you have any questions or requests around this project please
+        <a href="mailto:me@jamiefawcett.org.uk?subject={{ page.title }}">get in touch</a>.</p>
+    </div>
+
+    <div class="more-projects">
+      <h3>More projects</h3>
+      <p>Find more projects like this on my <a href="/projects">projects page</a>.</p>
+    </div>
+  </div>
+
+</div>
