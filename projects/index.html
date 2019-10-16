@@ -12,7 +12,11 @@ title: Projects
 			<h3><a href="{{ project.url }}"> {{project.type}}: {{ project.descriptive-title }}</a></h3>
 			<p>{{project.description}}</p>
 			<figure>
-				<img src="{{ site.url }}/assets/images/{{ project.main-image }}" class="project-img">
+				{% for image in project.images %}
+					{% if image.title == 'main' %}
+					<img src="{{ site.url }}/assets/images/{{ project.images[0].image }}" class="project-img">
+					{% endif %}
+				{% endfor %}
 			</figure>
 			<ul>
 				{% for tool in project.tools %}
