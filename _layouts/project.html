@@ -7,12 +7,14 @@ layout: default
 </div>
 
 <div class="project-image">
-  <figure>
-      <img src="{{ site.url }}/assets/images/{{ page.main-image }}" alt="main-fig" class="main-fig">
-      <figcaption>{{page.image-description}}</figcaption>
+  {% for each-image in page.images %}
+  {% assign rem = forloop.index | modulo: 2 %}
+  <figure {% if rem == 0 %} class="left"{% else %}class = "right"{% endif %}>
+      <img src="{{ site.url }}/assets/images/{{ each-image.image }}" alt="fig" class="main-fig">
+      <figcaption>{{each-image.image-description}}</figcaption>
   </figure>
+  {% endfor %}
 </div>
-
 
 <div class="content">
   {{ content }}

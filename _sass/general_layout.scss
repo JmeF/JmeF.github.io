@@ -191,11 +191,21 @@ img.profile{
   /* Individual project layouts
   ------------------------------------------------------------------- */
 .project-image{
-  figure{
-    max-width: 750px;
-    min-width: 350px;
-    width:50%;
+  .right{
+    clear:left;
     float: right;
+  }
+  .left{
+    clear:right;
+    float:left;
+  }
+
+  figure{
+    max-width: 500px;
+    min-width: 250px;
+    margin: 3% 8%;
+    width:45%;
+
   }
   figcaption{
     font-style: italic;
