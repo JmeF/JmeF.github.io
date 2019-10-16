@@ -8,8 +8,8 @@ layout: default
 
 <div class="project-image">
   {% for each-image in page.images %}
-  {% assign rem = forloop.index | modulo: 2 %}
-  <figure {% if rem == 0 %} class="left"{% else %}class = "right"{% endif %}>
+  {% comment %}{% assign rem = forloop.index | modulo: 2 %} {% if rem == 0 %} class="left"{% else %}class = "right"{% endif %}{% endcomment %}
+  <figure class="right">
       <img src="{{ site.url }}/assets/images/{{ each-image.image }}" alt="fig" class="main-fig">
       <figcaption>{{each-image.image-description}}</figcaption>
   </figure>

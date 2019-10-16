@@ -49,11 +49,17 @@ Does the OpenStreetMap Forum reflect a crowd or community model of participation
 3) Further evidencing this inequality, the top 10% of users account for almost 90% of total posts.
 
 ## Methods
-The basic approach was to iterate through all the pages on the site using  Python
+The basic approach was to navigate through all the pages on the site from the index page, through each sub-forum to identify all the topics and then collect data on each post (at first from the RSS feed and then using HTML scraping if posts on popular topics were not collected). To do this I used Python in a Jupyter Notebook, using the following libraries:
+- [requests](https://github.com/kennethreitz/requests ) to access webpages.
+- [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) to parse HTML.
+- [feedparser](https://github.com/kurtmckee/feedparser) to parse RSS feeds.
+- [Pandas](https://pandas.pydata.org/index.html) to store and manipulate data.
+- [seaborn](https://seaborn.pydata.org/) to visualise data.
 
-Basic overview of approach. Acknowledge issues.
+There were many issues with this approach, as one might expect  Acknowledge issues.
+Efficiency issues - storing scraped data
 
 ## Lessons
 - The most important lesson learned during this project was to get to know the site I was scraping and check the data being collected throughout the process. (I initially failed to check how many records were served by the RSS feeds and then realised that it only provided the most recent 15 records - requiring me to perform additional HTML scraping even though this was not dealt with during the course).
 - Only get the data you need
-- Error catching approaches + Efficiency issues - storing scraped data
+- Error catching approaches
