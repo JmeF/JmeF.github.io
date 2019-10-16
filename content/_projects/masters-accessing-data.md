@@ -1,19 +1,24 @@
 ---
 layout: project
-type: Masters
+type: Masters paper
 
-image: "accessing-data-figure.png"
+main-image: "accessing-data-figure.png"
 image-description: "Number of contributors to the forum by the number of contributions they made, both on a log-transformed axis.
 The diagonal straight line indicates there is a power-law distribution of contributions by different contributors."
 
 descriptive-title: "Scraping the OpenStreetMap forum to understand participation"
-short-description: "A short methods paper detailing an automated web-scraping approach
- for collecting data from an online forum."
-long-description: "In this project, I scraped data from the OpenStreetMap online forum to understand whether
-the majority of posts came from a selective community of contributors or 'crowds' of interested individuals."
+description: "A short methods paper using automated web-scraping of the OpenStreetMap online forum to understand whether
+the majority of posts come from a selective community of contributors or 'crowds' of interested individuals."
 
-report: True
+tools:
+  - Python
+  - HTML
+methods:
+  - web-scraping
+
+report: 'True'
 gdocs-link: "https://docs.google.com/document/d/1ZZvyY366r5glFlgblz3Sf2mJO8DrmmfNOvVCcaETHnQ/"
+code: 'True'
 github-link: "https://github.com/JmeF"
 
 ---

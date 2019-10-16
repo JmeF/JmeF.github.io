@@ -188,7 +188,7 @@ img.profile{
     }
   }
 
-  /* Project layout
+  /* Individual project layouts
   ------------------------------------------------------------------- */
 .project-image{
   figure{
@@ -222,3 +222,45 @@ img.profile{
     }
   }
 }
+
+/* Project home layout
+------------------------------------------------------------------- */
+.projects{
+  display: flex;
+  flex-flow: row wrap;
+  div{
+    flex: 1 1 30%;
+    max-width: 50%;
+    min-width: 200px;
+    border-style:solid;
+    border-width: 1px;
+    padding: 1%;
+    margin:5px;
+    text-align: center;
+    h3{
+      margin-top: 0;
+    }
+    img{
+      width: 90%;
+      margin: 2%;
+    }
+    ul{
+      list-style: none;
+      display: inline-flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    .tool{
+      background: $color5;
+    }
+    .method{
+      background: $color3;
+    }
+    li{
+      color: $color-white;
+      padding: 0.3em;
+      margin: 0.3em;
+      border-radius: 5%;
+      }
+    }
+  }
