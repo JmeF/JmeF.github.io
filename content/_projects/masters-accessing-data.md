@@ -25,7 +25,7 @@ methods:
 report: 'True'
 gdocs-link: "https://docs.google.com/document/d/1ZZvyY366r5glFlgblz3Sf2mJO8DrmmfNOvVCcaETHnQ/"
 code: 'True'
-github-link: "https://github.com/JmeF"
+github-link: "masters-accessing"
 
 ---
 ## Summary
@@ -48,18 +48,19 @@ Does the OpenStreetMap Forum reflect a crowd or community model of participation
 
 3) Further evidencing this inequality, the top 10% of users account for almost 90% of total posts.
 
-## Methods
-The basic approach was to navigate through all the pages on the site from the index page, through each sub-forum to identify all the topics and then collect data on each post (at first from the RSS feed and then using HTML scraping if posts on popular topics were not collected). To do this I used Python in a Jupyter Notebook, using the following libraries:
+## Methods and limitations
+The basic approach was to navigate through all the pages on the site from the index page, through each sub-forum to identify all the topics and then collect data on each post (at first from the RSS feed and then using HTML scraping if posts on popular topics were not collected).
+
+I used Python in a Jupyter Notebook, using the following libraries:
 - [requests](https://github.com/kennethreitz/requests ) to access webpages.
 - [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/) to parse HTML.
 - [feedparser](https://github.com/kurtmckee/feedparser) to parse RSS feeds.
 - [Pandas](https://pandas.pydata.org/index.html) to store and manipulate data.
 - [seaborn](https://seaborn.pydata.org/) to visualise data.
 
-There were many issues with this approach, as one might expect  Acknowledge issues.
-Efficiency issues - storing scraped data
+There were many issues with this approach, given the short timeframe of the module (4 weeks) and the project (1 week). One of the key issues I faced was failing to check how many records were served by the RSS feeds and then realised that it only provided the most recent 15 records. Where topics had more posts, I quickly had to develop an HTML scraping approach to collecting the same data (which I had never done before and was not taught to us). I also faced limitations with efficiency in the collection process, particularly in storing the scraped data in limited laptop memory and handling errors. Each of these were later addressed in my thesis where I repeated the data collection process using an HTML only approach, writing the data to a csv object in memory and handling errors better.  
 
 ## Lessons
-- The most important lesson learned during this project was to get to know the site I was scraping and check the data being collected throughout the process. (I initially failed to check how many records were served by the RSS feeds and then realised that it only provided the most recent 15 records - requiring me to perform additional HTML scraping even though this was not dealt with during the course).
-- Only get the data you need
-- Error catching approaches
+- The most important lesson learned during this project was to get to know the site I was scraping, check the data being collected throughout the process and quickly adapting to issues.
+- Also emphasised throughout this project was a need to carefully consider what data was relevant to collect, not only from a technical standpoint but also from an ethical direction.
+- I also learned the importance of effective error catching approaches (although I did not manage to implement a fully effective design during this process).
