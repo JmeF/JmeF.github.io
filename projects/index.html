@@ -18,13 +18,22 @@ title: Projects
 					{% endif %}
 				{% endfor %}
 			</figure>
-			<ul>
+			<ul class="project-tools">
 				{% for tool in project.tools %}
 				<li class="tool">{{tool}}</li>
 				{% endfor %}
 				{% for method in project.methods %}
 				<li class="method">{{method}}</li>
 				{% endfor %}
+			</ul>
+			<ul class="project-share">
+				{% if project.report == 'True' %}
+				<li><a href="{{project.gdocs-link}}edit?usp=sharing"><i class="far fa-file-alt"></i></a></li>
+				<li><a href="{{project.gdocs-link}}export?format=pdf"><i class="far fa-file-pdf"></i></a></li>
+				{% endif %}
+				{% if project.code == 'True' %}
+				<li><a href="https://github.com/JmeF/{{ project.github-link }}"><i class="fab fa-github"></i></a></li>
+				{% endif %}
 			</ul>
 		</div>
 

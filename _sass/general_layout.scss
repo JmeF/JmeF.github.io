@@ -260,17 +260,38 @@ img.profile{
       flex-wrap: wrap;
       padding: 0;
     }
-    .tool{
-      background: $color5;
-    }
-    .method{
-      background: $color3;
-    }
-    li{
+    .project-tools{
       color: $color-white;
-      padding: 0.3em;
-      margin: 0.3em;
-      border-radius: 5%;
+      .tool{
+        background: $color5;
+
+      }
+      .method{
+        background: $color3;
+      }
+      li{
+        padding: 0.3em;
+        margin: 0.3em;
+        border-radius: 5%;
+        }
+      }
+    .project-share{
+
+
+      li{
+        padding: 0.5em;
+        margin: 0 0.5em;
+        font-size: 2em;
+        .fab{
+          padding: 0;
+          margin:0;
+          font-size:1em;
+          color: $color4;
+        }
+        .far {
+          color: $color4;
+        }
+        }
       }
     }
   }
