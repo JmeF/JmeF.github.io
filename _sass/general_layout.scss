@@ -247,7 +247,7 @@ img.profile{
     padding: 1%;
     margin:5px;
     text-align: center;
-    h3{
+    h2{
       margin-top: 0;
     }
     img{
@@ -259,6 +259,7 @@ img.profile{
       display: inline-flex;
       flex-wrap: wrap;
       padding: 0;
+      margin: 0;
     }
     .project-tools{
       color: $color-white;
@@ -275,9 +276,11 @@ img.profile{
         border-radius: 5%;
         }
       }
+    .newline{
+      margin: 0;
+      padding: 0;
+    }
     .project-share{
-
-
       li{
         padding: 0.5em;
         margin: 0 0.5em;
