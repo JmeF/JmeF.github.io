@@ -4,12 +4,12 @@ title: Projects
 ---
 <div class="blurb">
 	<h1>{{ page.title }}</h1>
-	<p> This is a collection of projects I have done.</p>
+	<p> A collection of work, education, volunteer and personal projects I have completed.</p>
 </div>
 <div class="projects">
 		{% for project in site.projects %}
 		<div>
-			<h3><a href="{{ project.url }}"> {{project.type}}: {{ project.descriptive-title }}</a></h3>
+			<h2><a href="{{ project.url }}"> {{project.type}}: {{ project.descriptive-title }}</a></h2>
 			<p>{{project.description}}</p>
 			<figure>
 				{% for image in project.images %}
@@ -18,13 +18,23 @@ title: Projects
 					{% endif %}
 				{% endfor %}
 			</figure>
-			<ul>
+			<ul class="project-tools">
 				{% for tool in project.tools %}
 				<li class="tool">{{tool}}</li>
 				{% endfor %}
 				{% for method in project.methods %}
 				<li class="method">{{method}}</li>
 				{% endfor %}
+			</ul>
+			<p class="newline"></p>
+			<ul class="project-share">
+				{% if project.report == 'True' %}
+				<li><a href="{{project.gdocs-link}}edit?usp=sharing" title="Access the Google Doc"><i class="far fa-file-alt"></i></a></li>
+				<li><a href="{{project.gdocs-link}}export?format=pdf" title="Download the PDF"><i class="far fa-file-pdf"></i></a></li>
+				{% endif %}
+				{% if project.code == 'True' %}
+				<li><a href="https://github.com/JmeF/{{ project.github-link }}" title="Get the code on GitHub"><i class="fab fa-github"></i></a></li>
+				{% endif %}
 			</ul>
 		</div>
 
