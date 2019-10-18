@@ -1,6 +1,6 @@
 ---
 layout: project
-type:
+type: Personal
 
 images:
     - title: main
@@ -14,9 +14,12 @@ descriptive-title:
 description:
 
 tools:
-  -
+  - HTML / Markdown
+  - CSS / SCSS
+  - Jekyll
 methods:
-  -
+  - web-design
+  - web-development
 
 report:  'True'
 gdocs-link:  #Link style: "https://docs.google.com/document/d/1ZZvyY366r5glFlgblz3Sf2mJO8DrmmfNOvVCcaETHnQ/"
@@ -25,22 +28,13 @@ github-link:  #Link style: "masters-accessing"
 
 ---
 ## Summary
+- wanted to create a personal website to show off projects
 
 
-## Background
-
-## Research question
-
-## Findings
-1)
-2)
-3)
-
-## Methods
-
-## Limitations and improvements
+## Methods and limitations
+- Jekyll, Github pages, managing domains, Atom, Git, GitHub
 
 ## Reflections
--
--
--
+- Software skills can be (relatively) easily to translate
+- Code examples and how-tos are really useful for getting started, stackoverflow and documentation are so useful
+- Probably would use templates in future
