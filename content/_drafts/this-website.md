@@ -1,6 +1,7 @@
 ---
 layout: project
 type: Personal
+date: 2019-10-31
 
 images:
     - title: main
@@ -17,6 +18,7 @@ tools:
   - HTML / Markdown
   - CSS / SCSS
   - Jekyll
+  - Git / GitHub
 methods:
   - web-design
   - web-development

@@ -4,16 +4,19 @@ title: Talks
 ---
 <div class="blurb">
 		<h1>{{ page.title }}</h1>
-		<p>A number of talks that I have given that have been filmed.</p>
+		<p>Here is a collection of filmed presentations that I have given at
+			different conferences.</p>
 </div>
-<div>
-	<ul class="talks">
-		{% for talk in site.talks %}
-			<li class="talk">
-				<p><strong><a href={{ talk.link }} target="_blank">{{ talk.title }}</a></strong></p>
-				<p><i>{{ talk.location }} - {{ talk.date | date_to_string }}</i></p>
-				<p>{{ talk.content }}</p>
-			</li>
+<div class="projects">
+		{% assign talk-sorted = site.talks | sort: 'date' | reverse %}
+		{% for talk in talk-sorted %}
+		<div class="talk">
+			<h2><a href="https://youtu.be/{{ talk.link }}" target="_blank">{{ talk.title }}</a></h2>
+			<p>{{ talk.content }}</p>
+			<iframe src="https://www.youtube.com/embed/{{ talk.link }}"
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p><i>{{ talk.location }} - {{ talk.date | date_to_string }}</i></p>
+		</div>
 		{% endfor %}
-	</ul>
+
 </div>

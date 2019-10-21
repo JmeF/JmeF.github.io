@@ -236,15 +236,25 @@ img.profile{
   }
 }
 
-/* Project home layout
+/* Project + talk home layout
 ------------------------------------------------------------------- */
 .projects{
   display: flex;
   flex-flow: row wrap;
-  div{
-    flex: 1 1 30%;
+  .project{
+    flex: 0 1 50%;
     max-width: 50%;
     min-width: 200px;
+  }
+  .talk{
+    flex: 0 1 30%;
+    min-width: 580px;
+    iframe{
+      width:560px;
+      height:315px;
+    }
+  }
+  div{
     border-style:solid;
     border-width: 1px;
     padding: 1%;

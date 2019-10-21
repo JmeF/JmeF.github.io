@@ -1,6 +1,7 @@
 ---
 layout: project
 type: Masters paper
+date: 2019-02-16
 
 images:
     - title: main
