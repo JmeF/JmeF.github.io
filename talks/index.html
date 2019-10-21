@@ -4,11 +4,13 @@ title: Talks
 ---
 <div class="blurb">
 		<h1>{{ page.title }}</h1>
-		<p>A number of talks that I have given that have been filmed.</p>
+		<p>Here is a collection of filmed presentations that I have given at
+			different conferences.</p>
 </div>
 <div>
 	<ul class="talks">
-		{% for talk in site.talks %}
+		{% assign talk-sorted = site.talks | sort: 'date' | reverse %}
+		{% for talk in talk-sorted %}
 			<li class="talk">
 				<p><strong><a href={{ talk.link }} target="_blank">{{ talk.title }}</a></strong></p>
 				<p><i>{{ talk.location }} - {{ talk.date | date_to_string }}</i></p>
