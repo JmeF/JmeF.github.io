@@ -17,6 +17,7 @@ tools:
   - HTML / Markdown
   - CSS / SCSS
   - Jekyll
+  - Git / GitHub
 methods:
   - web-design
   - web-development
