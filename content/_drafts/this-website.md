@@ -1,6 +1,7 @@
 ---
 layout: project
 type: Personal
+date: 2019-10-31
 
 images:
     - title: main

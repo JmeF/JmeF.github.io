@@ -1,6 +1,7 @@
 ---
 layout: project
 type:
+date:
 
 images:
     - title: main
