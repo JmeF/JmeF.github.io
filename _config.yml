@@ -1,4 +1,7 @@
-name: Jamie Fawcett
+#Description stuff (esp for SEO)
+title: Jamie Fawcett
+
+#set the markdown
 markdown: kramdown
 
 #Setup collections so that md can be pushed into pages
