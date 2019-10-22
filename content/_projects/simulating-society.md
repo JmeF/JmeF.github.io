@@ -14,7 +14,7 @@ images:
       image: "sim-soc-figure-3.png"
       image-description: "Results of Experiment 2 (100 simulations for each of the seven market distributions by varying number of companies)."
 
-descriptive-title: Simulating open source software development in different markets
+title: Simulating open source software development in different markets
 description: A short methods paper an Agent-Based Model based on an iterative n-player prisoners dilemma to understand under what conditions private companies contribute to open-source software development.
 
 tools:

@@ -12,7 +12,7 @@ images:
       image: "accessing-data-hist-figure.png"
       image-description: "Histogram of contributors to the forum by the number of contributions they made."
 
-descriptive-title: "Scraping the OpenStreetMap forum to understand participation"
+title: "Scraping the OpenStreetMap forum to understand participation"
 description: "A short methods paper using automated web-scraping of the OpenStreetMap online forum to understand whether
 the majority of posts come from a selective community of contributors or 'crowds' of interested individuals."
 

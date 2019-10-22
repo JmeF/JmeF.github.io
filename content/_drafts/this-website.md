@@ -11,7 +11,7 @@ images:
       image: #Link style: "accessing-data-hist-figure.png"
       image-description:
 
-descriptive-title:
+title:
 description:
 
 tools:
