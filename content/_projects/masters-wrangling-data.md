@@ -14,7 +14,7 @@ images:
       image: "wrangling-data-figure3.png"
       image-description: "Number of links to US top-level domains per sentence on Wikipedia articles in 2009 and 2019."
 
-descriptive-title: "Assessing bias towards US sources on Wikipedia country articles"
+title: "Assessing bias towards US sources on Wikipedia country articles"
 description: "A short methods paper using text-analysis to determine whether Wikipedia articles have become more or less bias towards US 'authoritative' sources over 10 years."
 
 tools:
