@@ -44,8 +44,12 @@ footer {
   }
   .ref-bar{
     background: $ref-bg-color;
-    text-align:center;
+    text-align:left;
     padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
 
     p{
     margin: 0 1em;
