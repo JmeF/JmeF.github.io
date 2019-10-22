@@ -246,6 +246,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-seo-tag
+  jekyll-sitemap
   wdm (>= 0.1.0)
 
 BUNDLED WITH

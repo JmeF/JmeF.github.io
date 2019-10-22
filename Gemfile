@@ -8,6 +8,7 @@ source "https://rubygems.org"
 # Useful plugins
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
 
 
 #for windows build

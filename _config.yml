@@ -21,6 +21,7 @@ lang: en_CA
 #plugins
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 #set the markdown
 markdown: kramdown
