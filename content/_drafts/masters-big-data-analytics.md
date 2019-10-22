@@ -11,13 +11,16 @@ images:
       image: #Link style: "accessing-data-hist-figure.png"
       image-description:
 
-title:
-description:
+title: Exploring use of the OpenStreetMap Forum  
+description: A short methods paper exploring the use of the OpenStreetMap Forum as a tool for communication and as a continuing knowledge base for the project.
 
 tools:
-  -
+  - R
 methods:
-  -
+  - inequality analysis
+  - time-series analysis
+  - visualisation
+  - regression
 
 report:  'True'
 gdocs-link:  #Link style: "https://docs.google.com/document/d/1ZZvyY366r5glFlgblz3Sf2mJO8DrmmfNOvVCcaETHnQ/"
@@ -31,6 +34,7 @@ github-link:  #Link style: "masters-accessing"
 ## Background
 
 ## Research question
+What makes an interesting topic on the OSM forum?
 
 ## Findings
 1)
