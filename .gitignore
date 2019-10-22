@@ -1,9 +1,4 @@
-#ignore the site build and cache
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-
-#ignore bundler files
-.bundle/
-vendor/
