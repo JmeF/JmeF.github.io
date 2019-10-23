@@ -15,7 +15,7 @@ images:
       image-description: "Results of Experiment 2 (100 simulations for each of the seven market distributions by varying number of companies)."
 
 title: Simulating open source software development in different markets
-description: A short methods paper an Agent-Based Model based on an iterative n-player prisoners dilemma to understand under what conditions private companies contribute to open-source software development.
+description: A short methods paper using an Agent-Based Model based on an iterative n-player prisoners dilemma to understand under what conditions private companies contribute to open-source software development.
 
 tools:
   - NetLogo
