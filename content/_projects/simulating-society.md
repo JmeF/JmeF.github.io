@@ -4,13 +4,13 @@ type: Masters paper
 date: 2019-03-10
 
 images:
-    - title: main
+    - title: first
       image: "sim-soc-figure-1.png"
       image-description: "Distribution of different strategies in each market type (for 25 companies)"
-    - title: secondary
+    - title: second
       image: "sim-soc-figure-2.png"
       image-description: "Results of Experiment 1 (100 simulations for each of the seven market distributions)."
-    - title: tertiary
+    - title: main
       image: "sim-soc-figure-3.png"
       image-description: "Results of Experiment 2 (100 simulations for each of the seven market distributions by varying number of companies)."
 
