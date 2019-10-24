@@ -14,9 +14,9 @@ title: Projects
 			<h2><a href="{{ project.url }}"> {{project.type}}: {{ project.title }}</a></h2>
 			<p>{{project.description}}</p>
 			<figure>
-				{% for image in project.images %}
-					{% if image.title == 'main' %}
-					<img src="{{ site.url }}/assets/images/{{ project.images[0].image }}" class="project-img">
+				{% for item in project.images %}
+					{% if item.title == 'main' %}
+					<img src="{{ site.url }}/assets/images/{{ item.image }}" class="project-img">
 					{% endif %}
 				{% endfor %}
 			</figure>

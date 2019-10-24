@@ -4,13 +4,13 @@ type: Masters paper
 date: 2019-02-16
 
 images:
-    - title: main
+    - title: first
       image: "wrangling-data-figure1.png"
       image-description: "Number of links to US top-level domains on Wikipedia articles in 2009 and 2019."
     - title: second
       image: "wrangling-data-figure2.png"
       image-description: "Number of sentences in Wikipedia articles in 2009 and 2019."
-    - title: third
+    - title: main
       image: "wrangling-data-figure3.png"
       image-description: "Number of links to US top-level domains per sentence on Wikipedia articles in 2009 and 2019."
 
