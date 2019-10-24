@@ -1,7 +1,9 @@
 ---
 university: "University of Oxford"
 location: "UK"
+department-link: "https://www.oii.ox.ac.uk"
 degree-title: "MSc Social Science of the Internet"
+degree-link: https://www.oii.ox.ac.uk/study/msc-in-social-science-of-the-internet/
 grade: "Distinction"
 date-start: 2018-09-20
 date-end: 2019-08-31

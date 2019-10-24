@@ -5,17 +5,39 @@ title: Resume
 
 <div class="blurb">
 	<h1>{{ page.title }}</h1>
-	<p>I am currently living in Vancouver (BC) on a temporary work permit.</p>
+	<p>Data science, data governance and data policy expert, currently residing in Vancouver (BC) on a two year open work permit.</p>
 </div>
 <div class="resume-section">
 	<h2>Summary</h2>
-		<div class="bullets">
-			<li>Over 4 years delivering complex analytical research and consultancy projects.</li>
-			<li>Proven capacity to lead teams, manage projects and deliver impact-oriented outcomes.</li>
-			<li>Demonstrated ability to communicate technical concepts and policy recommendations.</li>
-			<li>Strong analytical skills including in a variety of research, statistical and data science methods.</li>
-			<li>Proficient in Python, R, SQL, Excel / Google Sheets, HTML/CSS, NetLogo.</li>
+		<div>
+			<ul>
+				<li>Over 4 years delivering complex analytical research and consultancy projects.</li>
+				<li>Proven capacity to lead teams, manage projects and deliver impact-oriented outcomes.</li>
+				<li>Demonstrated ability to communicate technical concepts and policy recommendations.</li>
+				<li>Strong analytical skills including in a variety of research, statistical and data science methods.</li>
+				<li>Proficient in Python, R, SQL, Excel / Google Sheets, HTML/CSS, NetLogo.</li>
+			</ul>
+	</div>
+</div>
+
+<div class="resume-section">
+	<h2>Graduate education</h2>
+		{% assign grad-ed-sorted = site.resume-education-grad | sort: 'date-start' | reverse %}
+		{% for item in grad-ed-sorted %}
+		<div class="record-head">
+			<div class="left">
+				<h3>{{ item.degree-title }}</h3>
+				<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
+			</div>
+			<div class="right">
+				<h3><a href="item.department-link">{{ item.university }}</a> (<em>{{ item.location }}</em>)</h3>
+				<h3>{{item.grade}}</h3>
+			</div>
 		</div>
+		<div class="record-content">
+			{{ item.content }}
+		</div>
+	{% endfor %}
 </div>
 
 <div class="resume-section">
@@ -28,15 +50,18 @@ title: Resume
 				<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
 			</div>
 			<div class="right">
-				<h3>{{ item.company }} (<em>{{ item.location }}</em>)</h3>
+				<h3><a href="{{item.company-link}}">{{ item.company }}</a></h3>
+				<p>(<em>{{ item.location }}</em>)</p>
 			</div>
 		</div>
+		<div class="record-content">
 			{{ item.content }}
+		</div>
 	{% endfor %}
 </div>
 
 <div class="resume-section">
-	<h2>Education</h2>
+	<h2>Previous education</h2>
 		{% assign ed-sorted = site.resume-education | sort: 'date-start' | reverse %}
 		{% for item in ed-sorted %}
 		<div class="record-head">
@@ -45,10 +70,29 @@ title: Resume
 				<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
 			</div>
 			<div class="right">
-				<h3>{{ item.university }} (<em>{{ item.location }}</em>)</h3>
+				<h3><a href="item.department-link">{{ item.university }}</a> (<em>{{ item.location }}</em>)</h3>
 				<h3>{{item.grade}}</h3>
 			</div>
 		</div>
-		{{ item.content }}
+		<div class="record-content">
+			{{ item.content }}
+		</div>
+	{% endfor %}
+</div>
+
+<div class="resume-section">
+	<h2>Part-time employment</h2>
+		{% assign pt-sorted = site.resume-part-time | sort: 'date-start' | reverse %}
+		{% for item in pt-sorted %}
+		<div class="record-head">
+			<div class="left">
+				<h3>{{ item.job-title }}</h3>
+				<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
+			</div>
+			<div class="right">
+				<h3><a href="{{item.company-link}}">{{ item.company }}</a></h3>
+				<p>(<em>{{ item.location }}</em>)</p>
+			</div>
+		</div>
 	{% endfor %}
 </div>
