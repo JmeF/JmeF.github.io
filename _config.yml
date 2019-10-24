@@ -39,6 +39,10 @@ collections:
     output: False
   resume-education:
     output: False
+  resume-education-grad:
+    output: False
+  resume-part-time:
+    output: False
 collections_dir: content
 
 #Setup the sass print style + set location (actually default)

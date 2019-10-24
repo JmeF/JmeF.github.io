@@ -1,5 +1,6 @@
 ---
 company: "Open Data Institute"
+company-link: https://theodi.org/
 location: "London, UK"
 job-title: "Research Assistant"
 date-start: 2014-07-04

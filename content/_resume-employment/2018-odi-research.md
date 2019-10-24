@@ -1,5 +1,6 @@
 ---
 company: "Open Data Institute"
+company-link: https://theodi.org/
 location: "London, UK"
 job-title: "Researcher"
 date-start: 2016-01-01
