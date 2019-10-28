@@ -5,8 +5,8 @@ department-link: "https://www.oii.ox.ac.uk"
 degree-title: "MSc Social Science of the Internet"
 degree-link: https://www.oii.ox.ac.uk/study/msc-in-social-science-of-the-internet/
 grade: "Distinction"
-date-start: 2018-09-20
-date-end: 2019-08-31
+date-start: 2018-10-01
+date-end: 2019-10-31
 ---
 
 - Studied the impact of digital technologies on society at the world-leading multidisciplinary Oxford Internet Institute.
