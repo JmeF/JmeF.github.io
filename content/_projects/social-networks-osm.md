@@ -37,15 +37,19 @@ methods:
 report:  'True'
 gdocs-link:  "https://docs.google.com/document/d/12grM5MfXpo88YOP7FeABqvumwlrL_wyY9rUpt5oZLD8/"
 code: 'True'
-github-link:  #Link style: "masters-accessing"
-
+github-link:  "masters-social-networks-osm"
 ---
+
 ## Summary
+
 
 
 ## Background
 
+
 ## Research question
+
+
 
 ## Findings
 1)
