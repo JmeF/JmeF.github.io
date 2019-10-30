@@ -244,8 +244,10 @@ img.profile{
   flex-flow: row wrap;
   .project{
     flex: 1 1 30%;
-    max-width: 50%;
     min-width: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
   }
   .talk{
     flex: 0 1 30%;

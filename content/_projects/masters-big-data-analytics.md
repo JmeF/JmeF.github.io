@@ -23,7 +23,7 @@ images:
       image: "BDA-figure6.png"
       image-description: "Line plots displaying temporal patterns of when topics were created by proportion per time of day (top) and proportion per day of week (bottom)."
 
-title: Exploring use of the OpenStreetMap Forum  
+title: Exploring discursive quality on the OpenStreetMap Forum  
 description: A short methods paper exploring the use of the OpenStreetMap Forum as a tool for communication and as a continuing knowledge base for the project.
 
 tools:
