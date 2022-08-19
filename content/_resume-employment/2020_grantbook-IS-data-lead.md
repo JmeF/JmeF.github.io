@@ -4,6 +4,7 @@ company-link: https://www.grantbook.org/
 location: "Vancouver, BC (Remote)"
 job-title: "Implementation Specialist - Data Lead"
 date-start: 2020-03-01
+date-end: "Current"
 ---
 
 - Delivering high value technical consulting across a varied portfolio of foundation clients. This includes: managing complex client relationships, gathering business requirements, communicating technical concepts to non-technical users, advising on technology strategy and producing concise documentation.
