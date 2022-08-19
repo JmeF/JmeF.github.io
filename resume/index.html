@@ -21,26 +21,6 @@ title: Resume
 </div>
 
 <div class="resume-section">
-	<h2>Graduate education</h2>
-		{% assign grad-ed-sorted = site.resume-education-grad | sort: 'date-start' | reverse %}
-		{% for item in grad-ed-sorted %}
-		<div class="record-head">
-			<div class="left">
-				<h3>{{ item.degree-title }}</h3>
-				<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
-			</div>
-			<div class="right">
-				<h3><a href="item.department-link">{{ item.university }}</a> (<em>{{ item.location }}</em>)</h3>
-				<h3>{{item.grade}}</h3>
-			</div>
-		</div>
-		<div class="record-content">
-			{{ item.content }}
-		</div>
-	{% endfor %}
-</div>
-
-<div class="resume-section">
 	<h2>Employment</h2>
 		{% assign em-sorted = site.resume-employment | sort: 'date-start' | reverse %}
 		{% for item in em-sorted %}
@@ -52,6 +32,26 @@ title: Resume
 			<div class="right">
 				<h3><a href="{{item.company-link}}">{{ item.company }}</a></h3>
 				<p>(<em>{{ item.location }}</em>)</p>
+			</div>
+		</div>
+		<div class="record-content">
+			{{ item.content }}
+		</div>
+	{% endfor %}
+</div>
+
+<div class="resume-section">
+	<h2>Graduate education</h2>
+		{% assign grad-ed-sorted = site.resume-education-grad | sort: 'date-start' | reverse %}
+		{% for item in grad-ed-sorted %}
+		<div class="record-head">
+			<div class="left">
+				<h3>{{ item.degree-title }}</h3>
+				<p><em>{{ item.date-start | date: "%B %Y" }} -  {{ item.date-end | date: "%B %Y" }}</em></p>
+			</div>
+			<div class="right">
+				<h3><a href="item.department-link">{{ item.university }}</a> (<em>{{ item.location }}</em>)</h3>
+				<h3>{{item.grade}}</h3>
 			</div>
 		</div>
 		<div class="record-content">
