@@ -13,8 +13,7 @@ title: Talks
 		<div class="talk">
 			<h2><a href="https://youtu.be/{{ talk.link }}" target="_blank">{{ talk.title }}</a></h2>
 			<p>{{ talk.content }}</p>
-			<iframe src="https://www.youtube.com/embed/{{ talk.link }}"
-			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p>{{ talk.content_down }}<p>
 			<p><i>{{ talk.location }} - {{ talk.date | date_to_string }}</i></p>
 		</div>
 		{% endfor %}
