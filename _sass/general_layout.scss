@@ -195,26 +195,42 @@ img.profile{
 
   /* Individual project layouts
   ------------------------------------------------------------------- */
-.project-image{
-  .right{
-    clear:left;
-    float: right;
-  }
-  .left{
-    clear:right;
-    float:left;
+// .project-image{
+//   .right{
+//     clear:left;
+//     float: right;
+//   }
+//   .left{
+//     clear:right;
+//     float:left;
+//   }
+
+//   figure{
+//     max-width: 500px;
+//     min-width: 250px;
+//     margin: 2% 0 5% 12%;
+//     width:45%;
+
+//   }
+//   figcaption{
+//     font-style: italic;
+//     font-size: $font-size-p;
+//   }
+// }
+
+.project-image {
+  figure {
+    float: right;              /* float images to the right */
+    width: 35%;                /* images take up ~1/3 of the page */
+    max-width: 300px;          /* keeps them from being huge */
+    min-width: 200px;          /* stops them from shrinking too much */
+    margin: 0 0 1rem 1rem;     /* space between image and text */
   }
 
-  figure{
-    max-width: 500px;
-    min-width: 250px;
-    margin: 2% 0 5% 12%;
-    width:45%;
-
-  }
-  figcaption{
+  figcaption {
     font-style: italic;
     font-size: $font-size-p;
+    text-align: center;        /* optional, looks nicer under images */
   }
 }
 
